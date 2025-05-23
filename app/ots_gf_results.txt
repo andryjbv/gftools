@@ -1,0 +1,1 @@
+/workspace/app/tests/../data/test/cabin/Cabin-Regular.ttf	b'File sanitized successfully!\n'

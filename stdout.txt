@@ -3,46 +3,745 @@ platform linux -- Python 3.11.12, pytest-8.3.5, pluggy-1.6.0 -- /usr/local/bin/p
 cachedir: .pytest_cache
 rootdir: /workspace/app
 configfile: pyproject.toml
-collecting ... collected 201 items / 1 error
+collecting ... collected 211 items
+
+tests/push/test_items.py::test_item_from_fp_and_gf_data[Family-fp0-gf_data0-res0] PASSED [  0%]
+tests/push/test_items.py::test_item_from_fp_and_gf_data[FamilyMeta-fp1-gf_data1-res1] PASSED [  0%]
+tests/push/test_items.py::test_item_from_fp_and_gf_data[Designer-fp2-gf_data2-res2] PASSED [  1%]
+tests/push/test_items.py::test_item_from_fp_and_gf_data[Axis-fp3-gf_data3-res3] PASSED [  1%]
+tests/push/test_servers.py::test_servers_open_and_save ERROR             [  2%]
+tests/push/test_servers.py::test_iter ERROR                              [  2%]
+tests/push/test_servers.py::test_compare_items[item0-res0] ERROR         [  3%]
+tests/push/test_servers.py::test_update_server[update_family-Allan-res0] ERROR [  3%]
+tests/push/test_servers.py::test_update_server[update_family_designers-Allan-res1] ERROR [  4%]
+tests/push/test_servers.py::test_update_server[update_metadata-Allan-res2] ERROR [  4%]
+tests/push/test_trafficjam.py::test_push_item_eq[item10-item20-True] PASSED [  5%]
+tests/push/test_trafficjam.py::test_push_item_eq[item11-item21-False] PASSED [  5%]
+tests/push/test_trafficjam.py::test_push_item_eq[item12-item22-False] PASSED [  6%]
+tests/push/test_trafficjam.py::test_push_item_eq[item13-item23-True] PASSED [  6%]
+tests/push/test_trafficjam.py::test_push_item_set[items0-1] PASSED       [  7%]
+tests/push/test_trafficjam.py::test_push_item_set[items1-2] PASSED       [  7%]
+tests/push/test_trafficjam.py::test_push_items_operators[add-item10-item20-expected0] PASSED [  8%]
+tests/push/test_trafficjam.py::test_push_items_operators[sub-item11-item21-expected1] PASSED [  8%]
+tests/push/test_trafficjam.py::test_push_items_add[items0-expected0] PASSED [  9%]
+tests/push/test_trafficjam.py::test_push_items_add[items1-expected1] PASSED [  9%]
+tests/push/test_trafficjam.py::test_push_items_add[items2-expected2] PASSED [  9%]
+tests/push/test_trafficjam.py::test_push_items_add[items3-expected3] PASSED [ 10%]
+tests/push/test_trafficjam.py::test_push_items_add[items4-expected4] PASSED [ 10%]
+tests/push/test_trafficjam.py::test_push_items_add[items5-expected5] PASSED [ 11%]
+tests/push/test_trafficjam.py::test_push_items_add[items6-expected6] PASSED [ 11%]
+tests/push/test_trafficjam.py::test_push_items_add[items7-expected7] PASSED [ 12%]
+tests/push/test_trafficjam.py::test_push_items_add[items8-expected8] PASSED [ 12%]
+tests/push/test_trafficjam.py::test_push_items_add[items9-expected9] PASSED [ 13%]
+tests/push/test_trafficjam.py::test_push_items_add[items10-expected10] PASSED [ 13%]
+tests/push/test_trafficjam.py::test_push_items_add[items11-expected11] PASSED [ 14%]
+tests/push/test_trafficjam.py::test_push_items_add[items12-expected12] PASSED [ 14%]
+tests/push/test_trafficjam.py::test_push_items_add[items13-expected13] PASSED [ 15%]
+tests/push/test_trafficjam.py::test_push_items_from_server_file[ofl/noto # 2-1] PASSED [ 15%]
+tests/push/test_trafficjam.py::test_push_items_from_server_file[# New\nofl/noto # 2\nofl/foobar # 3\n\n# Upgrade\nofl/mavenPro # 4-3] PASSED [ 16%]
+tests/push/test_trafficjam.py::test_push_items_from_server_file[# New\nofl/noto\n# Deleted: lang/languages/wsg_Gong.textproto # 5-2] PASSED [ 16%]
+tests/push/test_trafficjam.py::test_push_items_to_server_file[items0-create_dirs0-# New\nofl/amatic # 46\n\n# Upgrade\nofl/mavenpro # 45\n] PASSED [ 17%]
+tests/push/test_trafficjam.py::test_push_items_to_server_file[items1-create_dirs1-# New\n# Deleted: ofl/amatic # 46\n\n# Upgrade\nofl/mavenpro # 45\nofl/opensans # 47\n] PASSED [ 17%]
+tests/push/test_trafficjam.py::test_push_items_to_server_file[items2-create_dirs2-# Upgrade\nofl/mavenpro # 45\n] PASSED [ 18%]
+tests/push/test_trafficjam.py::test_push_items_missing_paths[path0-expected0] PASSED [ 18%]
+tests/push/test_trafficjam.py::test_push_items_missing_paths[path1-expected1] PASSED [ 18%]
+tests/push/test_trafficjam.py::test_push_items_to_json[item0-expected0] PASSED [ 19%]
+tests/push/test_trafficjam.py::test_push_items_to_json[item1-expected1] PASSED [ 19%]
+tests/push/test_trafficjam.py::test_push_items_to_json[item2-expected2] PASSED [ 20%]
+tests/test_builder.py::test_builder[/workspace/app/tests/../data/test/builder/basic_family_glyphs_0-font_paths0] PASSED [ 20%]
+tests/test_builder.py::test_builder[/workspace/app/tests/../data/test/builder/check_compatibility_ufo_1-font_paths1] PASSED [ 21%]
+tests/test_builder.py::test_builder[/workspace/app/tests/../data/test/builder/recipeprovider_noto-font_paths2] PASSED [ 21%]
+tests/test_builder.py::test_builder_glyphData[/workspace/app/tests/../data/test/builder/basic_family_glyphs_glyphData-font_paths0] PASSED [ 22%]
+tests/test_builder.py::test_builder_glyphData[/workspace/app/tests/../data/test/builder/recipeprovider_noto_glyphData-font_paths1] PASSED [ 22%]
+tests/test_builder.py::test_bad_configs PASSED                           [ 23%]
+tests/test_dependencies.py::test_write_and_read_dependencies[data/test/Lora-Regular.ttf] PASSED [ 23%]
+tests/test_fix.py::test_remove_tables PASSED                             [ 24%]
+tests/test_fix.py::test_add_dummy_dsig PASSED                            [ 24%]
+tests/test_fix.py::test_fix_hinted_font PASSED                           [ 25%]
+tests/test_fix.py::test_fix_unhinted_font PASSED                         [ 25%]
+tests/test_fix.py::test_fix_fs_type PASSED                               [ 26%]
+tests/test_fix.py::test_fix_weight_class[Hairline-1-64-0] PASSED         [ 26%]
+tests/test_fix.py::test_fix_weight_class[Thin-100-64-0] PASSED           [ 27%]
+tests/test_fix.py::test_fix_weight_class[ExtraLight-200-64-0] PASSED     [ 27%]
+tests/test_fix.py::test_fix_weight_class[Light-300-64-0] PASSED          [ 27%]
+tests/test_fix.py::test_fix_weight_class[Regular-400-64-0] PASSED        [ 28%]
+tests/test_fix.py::test_fix_weight_class[Medium-500-64-0] PASSED         [ 28%]
+tests/test_fix.py::test_fix_weight_class[SemiBold-600-64-0] PASSED       [ 29%]
+tests/test_fix.py::test_fix_weight_class[Bold-700-32-1] PASSED           [ 29%]
+tests/test_fix.py::test_fix_weight_class[ExtraBold-800-64-0] PASSED      [ 30%]
+tests/test_fix.py::test_fix_weight_class[Black-900-64-0] PASSED          [ 30%]
+tests/test_fix.py::test_fix_weight_class[ExtraBlack-1000-64-0] PASSED    [ 31%]
+tests/test_fix.py::test_fix_weight_class[Hairline Italic-1-1-2] PASSED   [ 31%]
+tests/test_fix.py::test_fix_weight_class[Thin Italic-100-1-2] PASSED     [ 32%]
+tests/test_fix.py::test_fix_weight_class[ExtraLight Italic-200-1-2] PASSED [ 32%]
+tests/test_fix.py::test_fix_weight_class[Light Italic-300-1-2] PASSED    [ 33%]
+tests/test_fix.py::test_fix_weight_class[Italic-400-1-2] PASSED          [ 33%]
+tests/test_fix.py::test_fix_weight_class[Medium Italic-500-1-2] PASSED   [ 34%]
+tests/test_fix.py::test_fix_weight_class[SemiBold Italic-600-1-2] PASSED [ 34%]
+tests/test_fix.py::test_fix_weight_class[Bold Italic-700-33-3] PASSED    [ 35%]
+tests/test_fix.py::test_fix_weight_class[ExtraBold Italic-800-1-2] PASSED [ 35%]
+tests/test_fix.py::test_fix_weight_class[Black Italic-900-1-2] PASSED    [ 36%]
+tests/test_fix.py::test_fix_weight_class[ExtraBlack Italic-1000-1-2] PASSED [ 36%]
+tests/test_fix.py::test_fix_weight_class[SemiCondensed Bold Italic-700-33-3] PASSED [ 36%]
+tests/test_fix.py::test_fix_weight_class[12pt Italic-400-1-2] PASSED     [ 37%]
+tests/test_fix.py::test_unknown_weight_class PASSED                      [ 37%]
+tests/test_fix.py::test_fs_selection[Hairline-1-64-0] PASSED             [ 38%]
+tests/test_fix.py::test_fs_selection[Thin-100-64-0] PASSED               [ 38%]
+tests/test_fix.py::test_fs_selection[ExtraLight-200-64-0] PASSED         [ 39%]
+tests/test_fix.py::test_fs_selection[Light-300-64-0] PASSED              [ 39%]
+tests/test_fix.py::test_fs_selection[Regular-400-64-0] PASSED            [ 40%]
+tests/test_fix.py::test_fs_selection[Medium-500-64-0] PASSED             [ 40%]
+tests/test_fix.py::test_fs_selection[SemiBold-600-64-0] PASSED           [ 41%]
+tests/test_fix.py::test_fs_selection[Bold-700-32-1] PASSED               [ 41%]
+tests/test_fix.py::test_fs_selection[ExtraBold-800-64-0] PASSED          [ 42%]
+tests/test_fix.py::test_fs_selection[Black-900-64-0] PASSED              [ 42%]
+tests/test_fix.py::test_fs_selection[ExtraBlack-1000-64-0] PASSED        [ 43%]
+tests/test_fix.py::test_fs_selection[Hairline Italic-1-1-2] PASSED       [ 43%]
+tests/test_fix.py::test_fs_selection[Thin Italic-100-1-2] PASSED         [ 44%]
+tests/test_fix.py::test_fs_selection[ExtraLight Italic-200-1-2] PASSED   [ 44%]
+tests/test_fix.py::test_fs_selection[Light Italic-300-1-2] PASSED        [ 45%]
+tests/test_fix.py::test_fs_selection[Italic-400-1-2] PASSED              [ 45%]
+tests/test_fix.py::test_fs_selection[Medium Italic-500-1-2] PASSED       [ 45%]
+tests/test_fix.py::test_fs_selection[SemiBold Italic-600-1-2] PASSED     [ 46%]
+tests/test_fix.py::test_fs_selection[Bold Italic-700-33-3] PASSED        [ 46%]
+tests/test_fix.py::test_fs_selection[ExtraBold Italic-800-1-2] PASSED    [ 47%]
+tests/test_fix.py::test_fs_selection[Black Italic-900-1-2] PASSED        [ 47%]
+tests/test_fix.py::test_fs_selection[ExtraBlack Italic-1000-1-2] PASSED  [ 48%]
+tests/test_fix.py::test_fs_selection[SemiCondensed Bold Italic-700-33-3] PASSED [ 48%]
+tests/test_fix.py::test_fs_selection[12pt Italic-400-1-2] PASSED         [ 49%]
+tests/test_fix.py::test_fix_mac_style[Hairline-1-64-0] PASSED            [ 49%]
+tests/test_fix.py::test_fix_mac_style[Thin-100-64-0] PASSED              [ 50%]
+tests/test_fix.py::test_fix_mac_style[ExtraLight-200-64-0] PASSED        [ 50%]
+tests/test_fix.py::test_fix_mac_style[Light-300-64-0] PASSED             [ 51%]
+tests/test_fix.py::test_fix_mac_style[Regular-400-64-0] PASSED           [ 51%]
+tests/test_fix.py::test_fix_mac_style[Medium-500-64-0] PASSED            [ 52%]
+tests/test_fix.py::test_fix_mac_style[SemiBold-600-64-0] PASSED          [ 52%]
+tests/test_fix.py::test_fix_mac_style[Bold-700-32-1] PASSED              [ 53%]
+tests/test_fix.py::test_fix_mac_style[ExtraBold-800-64-0] PASSED         [ 53%]
+tests/test_fix.py::test_fix_mac_style[Black-900-64-0] PASSED             [ 54%]
+tests/test_fix.py::test_fix_mac_style[ExtraBlack-1000-64-0] PASSED       [ 54%]
+tests/test_fix.py::test_fix_mac_style[Hairline Italic-1-1-2] PASSED      [ 54%]
+tests/test_fix.py::test_fix_mac_style[Thin Italic-100-1-2] PASSED        [ 55%]
+tests/test_fix.py::test_fix_mac_style[ExtraLight Italic-200-1-2] PASSED  [ 55%]
+tests/test_fix.py::test_fix_mac_style[Light Italic-300-1-2] PASSED       [ 56%]
+tests/test_fix.py::test_fix_mac_style[Italic-400-1-2] PASSED             [ 56%]
+tests/test_fix.py::test_fix_mac_style[Medium Italic-500-1-2] PASSED      [ 57%]
+tests/test_fix.py::test_fix_mac_style[SemiBold Italic-600-1-2] PASSED    [ 57%]
+tests/test_fix.py::test_fix_mac_style[Bold Italic-700-33-3] PASSED       [ 58%]
+tests/test_fix.py::test_fix_mac_style[ExtraBold Italic-800-1-2] PASSED   [ 58%]
+tests/test_fix.py::test_fix_mac_style[Black Italic-900-1-2] PASSED       [ 59%]
+tests/test_fix.py::test_fix_mac_style[ExtraBlack Italic-1000-1-2] PASSED [ 59%]
+tests/test_fix.py::test_fix_mac_style[SemiCondensed Bold Italic-700-33-3] PASSED [ 60%]
+tests/test_fix.py::test_fix_mac_style[12pt Italic-400-1-2] PASSED        [ 60%]
+tests/test_fix.py::test_fix_vertical_metrics_family_consistency PASSED   [ 61%]
+tests/test_fix.py::test_fix_vertical_metrics_win_values PASSED           [ 61%]
+tests/test_fix.py::test_fix_vertical_metrics_typo_and_hhea_match PASSED  [ 62%]
+tests/test_fix.py::test_fix_vertical_metrics_typo_metrics_enabled PASSED [ 62%]
+tests/test_fix.py::test_fix_colr_v0_font[data/test/CairoPlay[slnt,wght]-no-empty-glyphs.ttf] PASSED [ 63%]
+tests/test_fix.py::test_fix_colr_v0_font[data/test/CairoPlay[slnt,wght]-gid1-not-empty.ttf] PASSED [ 63%]
+tests/test_fix.py::test_fix_colr_v1_font PASSED                          [ 63%]
+tests/test_fix.py::test_ofl_license_strings PASSED                       [ 64%]
+tests/test_fontsetter.py::test_setter[obj0-path0-100-res0] PASSED        [ 64%]
+tests/test_fontsetter.py::test_setter[obj1-path1-100-res1] PASSED        [ 65%]
+tests/test_fontsetter.py::test_setter[obj2-path2-100-res2] PASSED        [ 65%]
+tests/test_fontsetter.py::test_setter[obj3-path3-100-res3] PASSED        [ 66%]
+tests/test_fontsetter.py::test_setter[obj4-path4-val4-res4] PASSED       [ 66%]
+tests/test_fontsetter.py::test_setter[obj5-path5-|= 0x2-res5] PASSED     [ 67%]
+tests/test_fontsetter.py::test_setter_on_fonts[obj0-path0-64] PASSED     [ 67%]
+tests/test_fontsetter.py::test_setter_on_fonts[obj1-path1-1000] PASSED   [ 68%]
+tests/test_fontsetter.py::test_setter_on_fonts[obj2-path2-val2] PASSED   [ 68%]
+tests/test_fontsetter.py::test_setter_on_fonts[obj3-path3-10] PASSED     [ 69%]
+tests/test_gfgithub.py::test_pr_files[6874-1] FAILED                     [ 69%]
+tests/test_gfgithub.py::test_pr_files[6779-3] FAILED                     [ 70%]
+tests/test_gfgithub.py::test_pr_files[2987-178] FAILED                   [ 70%]
+tests/test_gfgithub.py::test_pr_files[6787-568] FAILED                   [ 71%]
+tests/test_instancer.py::test_gen_static_font PASSED                     [ 71%]
+tests/test_instancer.py::test_gen_static_font_custom_names PASSED        [ 72%]
+tests/test_instancer.py::test_gen_static_font_custom_names_without_declaring_wght PASSED [ 72%]
+tests/test_instancer.py::test_gen_static_font_custom_names_ribbi PASSED  [ 72%]
+tests/test_instancer.py::test_gen_static_font_custom_names_non_ribbi PASSED [ 73%]
+tests/test_usage.py::TestGFToolsScripts::test_add_font PASSED            [ 73%]
+tests/test_usage.py::TestGFToolsScripts::test_build_ofl PASSED           [ 74%]
+tests/test_usage.py::TestGFToolsScripts::test_check_bbox PASSED          [ 74%]
+tests/test_usage.py::TestGFToolsScripts::test_check_copyright_notices PASSED [ 75%]
+tests/test_usage.py::TestGFToolsScripts::test_check_font_version PASSED  [ 75%]
+tests/test_usage.py::TestGFToolsScripts::test_check_name PASSED          [ 76%]
+tests/test_usage.py::TestGFToolsScripts::test_check_vtt_compatibility PASSED [ 76%]
+tests/test_usage.py::TestGFToolsScripts::test_compare_font PASSED        [ 77%]
+tests/test_usage.py::TestGFToolsScripts::test_find_features PASSED       [ 77%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_ascii_fontmetadata PASSED [ 78%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_cmap PASSED            [ 78%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_family PASSED          [ 79%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_familymetadata PASSED  [ 79%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_font PASSED            [ 80%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_fsselection PASSED     [ 80%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_fstype PASSED          [ 81%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_gasp PASSED            [ 81%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_glyph_private_encoding PASSED [ 81%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_glyphs PASSED          [ 82%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_hinting PASSED         [ 82%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_isfixedpitch PASSED    [ 83%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_nameids PASSED         [ 83%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_nonhinting PASSED      [ 84%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_ttfautohint PASSED     [ 84%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_vendorid PASSED        [ 85%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_vertical_metrics PASSED [ 85%]
+tests/test_usage.py::TestGFToolsScripts::test_font_diff PASSED           [ 86%]
+tests/test_usage.py::TestGFToolsScripts::test_font_weights_coverage PASSED [ 86%]
+tests/test_usage.py::TestGFToolsScripts::test_list_italicangle PASSED    [ 87%]
+tests/test_usage.py::TestGFToolsScripts::test_list_panose PASSED         [ 87%]
+tests/test_usage.py::TestGFToolsScripts::test_list_weightclass PASSED    [ 88%]
+tests/test_usage.py::TestGFToolsScripts::test_list_widthclass PASSED     [ 88%]
+tests/test_usage.py::TestGFToolsScripts::test_nametable_from_filename PASSED [ 89%]
+tests/test_usage.py::TestGFToolsScripts::test_ots PASSED                 [ 89%]
+tests/test_usage.py::TestGFToolsScripts::test_rangify PASSED             [ 90%]
+tests/test_usage.py::TestGFToolsScripts::test_ttf2cp PASSED              [ 90%]
+tests/test_usage.py::TestGFToolsScripts::test_unicode_names PASSED       [ 90%]
+tests/test_usage.py::TestGFToolsScripts::test_update_families PASSED     [ 91%]
+tests/test_usage.py::TestGFToolsScripts::test_update_version PASSED      [ 91%]
+tests/test_usage.py::TestGFToolsScripts::test_varfont_info PASSED        [ 92%]
+tests/test_usage.py::TestGFToolsScripts::test_what_subsets PASSED        [ 92%]
+tests/test_utils.py::test_remove_url_prefix[https://www.google.com-google.com] PASSED [ 93%]
+tests/test_utils.py::test_remove_url_prefix[https://google.com-google.com] PASSED [ 93%]
+tests/test_utils.py::test_remove_url_prefix[http://www.google.com-google.com] PASSED [ 94%]
+tests/test_utils.py::test_remove_url_prefix[http://google.com-google.com] PASSED [ 94%]
+tests/test_utils.py::test_remove_url_prefix[google.com-google.com] PASSED [ 95%]
+tests/test_utils.py::test_remove_url_prefix[-] PASSED                    [ 95%]
+tests/test_utils.py::test_format_html PASSED                             [ 96%]
+tests/test_utils.py::test_github_user_repo[https://github.com/SorkinType/SASchoolHandAustralia-want0] PASSED [ 96%]
+tests/test_utils.py::test_github_user_repo[https://github.com/SorkinType/SASchoolHandAustralia/-want1] PASSED [ 97%]
+tests/test_utils.py::test_github_user_repo[https://github.com/googlefonts/MavenPro//-want2] PASSED [ 97%]
+tests/test_utils.py::test_github_user_repo[https://github.com/googlefonts/MavenPro.git-want3] PASSED [ 98%]
+tests/test_utils.py::test_github_user_repo[https://www.github.com/googlefonts/MavenPro.git-want4] PASSED [ 98%]
+tests/test_utils.py::test_github_user_repo[http://www.github.com/googlefonts/MavenPro.git-want5] PASSED [ 99%]
+tests/test_utils.py::test_github_user_repo[http://www.github.com/NDISCOVER/Exo-2.0.git-want6] PASSED [ 99%]
+tests/test_utils.py::test_supported_languages PASSED                     [100%]
 
 ==================================== ERRORS ====================================
-__________________ ERROR collecting tests/test_fontsetter.py ___________________
-app/tests/test_fontsetter.py:7: in <module>
-    TEST_FONT = TTFont(os.path.join("data", "test", "Inconsolata[wdth,wght].ttf"))
-/usr/local/lib/python3.11/site-packages/fontTools/ttLib/ttFont.py:160: in __init__
-    file = open(file, "rb")
-E   FileNotFoundError: [Errno 2] No such file or directory: 'data/test/Inconsolata[wdth,wght].ttf'
+_________________ ERROR at setup of test_servers_open_and_save _________________
+
+    @pytest.fixture
+    def servers():
+>       return GFServers.from_dict(DATA)
+
+tests/push/test_servers.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Lib/gftools/push/servers.py:261: in from_dict
+    inst = cls()
+Lib/gftools/push/servers.py:188: in __init__
+    self.dev = GFServer(
+Lib/gftools/push/servers.py:91: in __init__
+    self.family_versions_data = json.loads(requests.get(self.version_url).text[5:])
+/usr/local/lib/python3.11/site-packages/requests/api.py:73: in get
+    return request("get", url, params=params, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/api.py:59: in request
+    return session.request(method=method, url=url, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:575: in request
+    prep = self.prepare_request(req)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:484: in prepare_request
+    p.prepare(
+/usr/local/lib/python3.11/site-packages/requests/models.py:367: in prepare
+    self.prepare_url(url, params)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <PreparedRequest [GET]>, url = 'None', params = OrderedDict()
+
+    def prepare_url(self, url, params):
+        """Prepares the given HTTP URL."""
+        #: Accept objects that have string representations.
+        #: We're unable to blindly call unicode/str functions
+        #: as this will include the bytestring indicator (b'')
+        #: on python 3.x.
+        #: https://github.com/psf/requests/pull/2238
+        if isinstance(url, bytes):
+            url = url.decode("utf8")
+        else:
+            url = str(url)
+    
+        # Remove leading whitespaces from url
+        url = url.lstrip()
+    
+        # Don't do any URL preparation for non-HTTP schemes like `mailto`,
+        # `data` etc to work around exceptions from `url_parse`, which
+        # handles RFC 3986 only.
+        if ":" in url and not url.lower().startswith("http"):
+            self.url = url
+            return
+    
+        # Support for unicode domain names and paths.
+        try:
+            scheme, auth, host, port, path, query, fragment = parse_url(url)
+        except LocationParseError as e:
+            raise InvalidURL(*e.args)
+    
+        if not scheme:
+>           raise MissingSchema(
+                f"Invalid URL {url!r}: No scheme supplied. "
+                f"Perhaps you meant https://{url}?"
+            )
+E           requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+
+/usr/local/lib/python3.11/site-packages/requests/models.py:438: MissingSchema
+_________________________ ERROR at setup of test_iter __________________________
+
+    @pytest.fixture
+    def servers():
+>       return GFServers.from_dict(DATA)
+
+tests/push/test_servers.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Lib/gftools/push/servers.py:261: in from_dict
+    inst = cls()
+Lib/gftools/push/servers.py:188: in __init__
+    self.dev = GFServer(
+Lib/gftools/push/servers.py:91: in __init__
+    self.family_versions_data = json.loads(requests.get(self.version_url).text[5:])
+/usr/local/lib/python3.11/site-packages/requests/api.py:73: in get
+    return request("get", url, params=params, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/api.py:59: in request
+    return session.request(method=method, url=url, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:575: in request
+    prep = self.prepare_request(req)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:484: in prepare_request
+    p.prepare(
+/usr/local/lib/python3.11/site-packages/requests/models.py:367: in prepare
+    self.prepare_url(url, params)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <PreparedRequest [GET]>, url = 'None', params = OrderedDict()
+
+    def prepare_url(self, url, params):
+        """Prepares the given HTTP URL."""
+        #: Accept objects that have string representations.
+        #: We're unable to blindly call unicode/str functions
+        #: as this will include the bytestring indicator (b'')
+        #: on python 3.x.
+        #: https://github.com/psf/requests/pull/2238
+        if isinstance(url, bytes):
+            url = url.decode("utf8")
+        else:
+            url = str(url)
+    
+        # Remove leading whitespaces from url
+        url = url.lstrip()
+    
+        # Don't do any URL preparation for non-HTTP schemes like `mailto`,
+        # `data` etc to work around exceptions from `url_parse`, which
+        # handles RFC 3986 only.
+        if ":" in url and not url.lower().startswith("http"):
+            self.url = url
+            return
+    
+        # Support for unicode domain names and paths.
+        try:
+            scheme, auth, host, port, path, query, fragment = parse_url(url)
+        except LocationParseError as e:
+            raise InvalidURL(*e.args)
+    
+        if not scheme:
+>           raise MissingSchema(
+                f"Invalid URL {url!r}: No scheme supplied. "
+                f"Perhaps you meant https://{url}?"
+            )
+E           requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+
+/usr/local/lib/python3.11/site-packages/requests/models.py:438: MissingSchema
+_______________ ERROR at setup of test_compare_items[item0-res0] _______________
+
+    @pytest.fixture
+    def servers():
+>       return GFServers.from_dict(DATA)
+
+tests/push/test_servers.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Lib/gftools/push/servers.py:261: in from_dict
+    inst = cls()
+Lib/gftools/push/servers.py:188: in __init__
+    self.dev = GFServer(
+Lib/gftools/push/servers.py:91: in __init__
+    self.family_versions_data = json.loads(requests.get(self.version_url).text[5:])
+/usr/local/lib/python3.11/site-packages/requests/api.py:73: in get
+    return request("get", url, params=params, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/api.py:59: in request
+    return session.request(method=method, url=url, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:575: in request
+    prep = self.prepare_request(req)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:484: in prepare_request
+    p.prepare(
+/usr/local/lib/python3.11/site-packages/requests/models.py:367: in prepare
+    self.prepare_url(url, params)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <PreparedRequest [GET]>, url = 'None', params = OrderedDict()
+
+    def prepare_url(self, url, params):
+        """Prepares the given HTTP URL."""
+        #: Accept objects that have string representations.
+        #: We're unable to blindly call unicode/str functions
+        #: as this will include the bytestring indicator (b'')
+        #: on python 3.x.
+        #: https://github.com/psf/requests/pull/2238
+        if isinstance(url, bytes):
+            url = url.decode("utf8")
+        else:
+            url = str(url)
+    
+        # Remove leading whitespaces from url
+        url = url.lstrip()
+    
+        # Don't do any URL preparation for non-HTTP schemes like `mailto`,
+        # `data` etc to work around exceptions from `url_parse`, which
+        # handles RFC 3986 only.
+        if ":" in url and not url.lower().startswith("http"):
+            self.url = url
+            return
+    
+        # Support for unicode domain names and paths.
+        try:
+            scheme, auth, host, port, path, query, fragment = parse_url(url)
+        except LocationParseError as e:
+            raise InvalidURL(*e.args)
+    
+        if not scheme:
+>           raise MissingSchema(
+                f"Invalid URL {url!r}: No scheme supplied. "
+                f"Perhaps you meant https://{url}?"
+            )
+E           requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+
+/usr/local/lib/python3.11/site-packages/requests/models.py:438: MissingSchema
+________ ERROR at setup of test_update_server[update_family-Allan-res0] ________
+
+    @pytest.fixture
+    def server():
+>       return GFServer(name="Prod")
+
+tests/push/test_servers.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Lib/gftools/push/servers.py:91: in __init__
+    self.family_versions_data = json.loads(requests.get(self.version_url).text[5:])
+/usr/local/lib/python3.11/site-packages/requests/api.py:73: in get
+    return request("get", url, params=params, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/api.py:59: in request
+    return session.request(method=method, url=url, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:575: in request
+    prep = self.prepare_request(req)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:484: in prepare_request
+    p.prepare(
+/usr/local/lib/python3.11/site-packages/requests/models.py:367: in prepare
+    self.prepare_url(url, params)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <PreparedRequest [GET]>, url = 'None', params = OrderedDict()
+
+    def prepare_url(self, url, params):
+        """Prepares the given HTTP URL."""
+        #: Accept objects that have string representations.
+        #: We're unable to blindly call unicode/str functions
+        #: as this will include the bytestring indicator (b'')
+        #: on python 3.x.
+        #: https://github.com/psf/requests/pull/2238
+        if isinstance(url, bytes):
+            url = url.decode("utf8")
+        else:
+            url = str(url)
+    
+        # Remove leading whitespaces from url
+        url = url.lstrip()
+    
+        # Don't do any URL preparation for non-HTTP schemes like `mailto`,
+        # `data` etc to work around exceptions from `url_parse`, which
+        # handles RFC 3986 only.
+        if ":" in url and not url.lower().startswith("http"):
+            self.url = url
+            return
+    
+        # Support for unicode domain names and paths.
+        try:
+            scheme, auth, host, port, path, query, fragment = parse_url(url)
+        except LocationParseError as e:
+            raise InvalidURL(*e.args)
+    
+        if not scheme:
+>           raise MissingSchema(
+                f"Invalid URL {url!r}: No scheme supplied. "
+                f"Perhaps you meant https://{url}?"
+            )
+E           requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+
+/usr/local/lib/python3.11/site-packages/requests/models.py:438: MissingSchema
+___ ERROR at setup of test_update_server[update_family_designers-Allan-res1] ___
+
+    @pytest.fixture
+    def server():
+>       return GFServer(name="Prod")
+
+tests/push/test_servers.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Lib/gftools/push/servers.py:91: in __init__
+    self.family_versions_data = json.loads(requests.get(self.version_url).text[5:])
+/usr/local/lib/python3.11/site-packages/requests/api.py:73: in get
+    return request("get", url, params=params, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/api.py:59: in request
+    return session.request(method=method, url=url, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:575: in request
+    prep = self.prepare_request(req)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:484: in prepare_request
+    p.prepare(
+/usr/local/lib/python3.11/site-packages/requests/models.py:367: in prepare
+    self.prepare_url(url, params)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <PreparedRequest [GET]>, url = 'None', params = OrderedDict()
+
+    def prepare_url(self, url, params):
+        """Prepares the given HTTP URL."""
+        #: Accept objects that have string representations.
+        #: We're unable to blindly call unicode/str functions
+        #: as this will include the bytestring indicator (b'')
+        #: on python 3.x.
+        #: https://github.com/psf/requests/pull/2238
+        if isinstance(url, bytes):
+            url = url.decode("utf8")
+        else:
+            url = str(url)
+    
+        # Remove leading whitespaces from url
+        url = url.lstrip()
+    
+        # Don't do any URL preparation for non-HTTP schemes like `mailto`,
+        # `data` etc to work around exceptions from `url_parse`, which
+        # handles RFC 3986 only.
+        if ":" in url and not url.lower().startswith("http"):
+            self.url = url
+            return
+    
+        # Support for unicode domain names and paths.
+        try:
+            scheme, auth, host, port, path, query, fragment = parse_url(url)
+        except LocationParseError as e:
+            raise InvalidURL(*e.args)
+    
+        if not scheme:
+>           raise MissingSchema(
+                f"Invalid URL {url!r}: No scheme supplied. "
+                f"Perhaps you meant https://{url}?"
+            )
+E           requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+
+/usr/local/lib/python3.11/site-packages/requests/models.py:438: MissingSchema
+_______ ERROR at setup of test_update_server[update_metadata-Allan-res2] _______
+
+    @pytest.fixture
+    def server():
+>       return GFServer(name="Prod")
+
+tests/push/test_servers.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Lib/gftools/push/servers.py:91: in __init__
+    self.family_versions_data = json.loads(requests.get(self.version_url).text[5:])
+/usr/local/lib/python3.11/site-packages/requests/api.py:73: in get
+    return request("get", url, params=params, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/api.py:59: in request
+    return session.request(method=method, url=url, **kwargs)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:575: in request
+    prep = self.prepare_request(req)
+/usr/local/lib/python3.11/site-packages/requests/sessions.py:484: in prepare_request
+    p.prepare(
+/usr/local/lib/python3.11/site-packages/requests/models.py:367: in prepare
+    self.prepare_url(url, params)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <PreparedRequest [GET]>, url = 'None', params = OrderedDict()
+
+    def prepare_url(self, url, params):
+        """Prepares the given HTTP URL."""
+        #: Accept objects that have string representations.
+        #: We're unable to blindly call unicode/str functions
+        #: as this will include the bytestring indicator (b'')
+        #: on python 3.x.
+        #: https://github.com/psf/requests/pull/2238
+        if isinstance(url, bytes):
+            url = url.decode("utf8")
+        else:
+            url = str(url)
+    
+        # Remove leading whitespaces from url
+        url = url.lstrip()
+    
+        # Don't do any URL preparation for non-HTTP schemes like `mailto`,
+        # `data` etc to work around exceptions from `url_parse`, which
+        # handles RFC 3986 only.
+        if ":" in url and not url.lower().startswith("http"):
+            self.url = url
+            return
+    
+        # Support for unicode domain names and paths.
+        try:
+            scheme, auth, host, port, path, query, fragment = parse_url(url)
+        except LocationParseError as e:
+            raise InvalidURL(*e.args)
+    
+        if not scheme:
+>           raise MissingSchema(
+                f"Invalid URL {url!r}: No scheme supplied. "
+                f"Perhaps you meant https://{url}?"
+            )
+E           requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+
+/usr/local/lib/python3.11/site-packages/requests/models.py:438: MissingSchema
+=================================== FAILURES ===================================
+____________________________ test_pr_files[6874-1] _____________________________
+
+pr_number = 6874, file_count = 1
+
+    @pytest.mark.parametrize(
+        "pr_number,file_count",
+        [
+            (6874, 1),
+            (6779, 3),
+            (2987, 178),
+            (6787, 568),
+        ],
+    )
+    def test_pr_files(pr_number, file_count):
+>       client = GitHubClient("google", "fonts")
+
+tests/test_gfgithub.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <gftools.gfgithub.GitHubClient object at 0x7b87b4683990>
+repo_owner = 'google', repo_name = 'fonts'
+
+    def __init__(self, repo_owner, repo_name):
+        if not "GH_TOKEN" in os.environ:
+>           raise Exception("GH_TOKEN environment variable not set")
+E           Exception: GH_TOKEN environment variable not set
+
+Lib/gftools/gfgithub.py:16: Exception
+____________________________ test_pr_files[6779-3] _____________________________
+
+pr_number = 6779, file_count = 3
+
+    @pytest.mark.parametrize(
+        "pr_number,file_count",
+        [
+            (6874, 1),
+            (6779, 3),
+            (2987, 178),
+            (6787, 568),
+        ],
+    )
+    def test_pr_files(pr_number, file_count):
+>       client = GitHubClient("google", "fonts")
+
+tests/test_gfgithub.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <gftools.gfgithub.GitHubClient object at 0x7b87b46920d0>
+repo_owner = 'google', repo_name = 'fonts'
+
+    def __init__(self, repo_owner, repo_name):
+        if not "GH_TOKEN" in os.environ:
+>           raise Exception("GH_TOKEN environment variable not set")
+E           Exception: GH_TOKEN environment variable not set
+
+Lib/gftools/gfgithub.py:16: Exception
+___________________________ test_pr_files[2987-178] ____________________________
+
+pr_number = 2987, file_count = 178
+
+    @pytest.mark.parametrize(
+        "pr_number,file_count",
+        [
+            (6874, 1),
+            (6779, 3),
+            (2987, 178),
+            (6787, 568),
+        ],
+    )
+    def test_pr_files(pr_number, file_count):
+>       client = GitHubClient("google", "fonts")
+
+tests/test_gfgithub.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <gftools.gfgithub.GitHubClient object at 0x7b87b46e82d0>
+repo_owner = 'google', repo_name = 'fonts'
+
+    def __init__(self, repo_owner, repo_name):
+        if not "GH_TOKEN" in os.environ:
+>           raise Exception("GH_TOKEN environment variable not set")
+E           Exception: GH_TOKEN environment variable not set
+
+Lib/gftools/gfgithub.py:16: Exception
+___________________________ test_pr_files[6787-568] ____________________________
+
+pr_number = 6787, file_count = 568
+
+    @pytest.mark.parametrize(
+        "pr_number,file_count",
+        [
+            (6874, 1),
+            (6779, 3),
+            (2987, 178),
+            (6787, 568),
+        ],
+    )
+    def test_pr_files(pr_number, file_count):
+>       client = GitHubClient("google", "fonts")
+
+tests/test_gfgithub.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <gftools.gfgithub.GitHubClient object at 0x7b87b4683e90>
+repo_owner = 'google', repo_name = 'fonts'
+
+    def __init__(self, repo_owner, repo_name):
+        if not "GH_TOKEN" in os.environ:
+>           raise Exception("GH_TOKEN environment variable not set")
+E           Exception: GH_TOKEN environment variable not set
+
+Lib/gftools/gfgithub.py:16: Exception
 =============================== warnings summary ===============================
-app/Lib/gftools/designers_pb2.py:17
+Lib/gftools/designers_pb2.py:17
   /workspace/app/Lib/gftools/designers_pb2.py:17: DeprecationWarning: Call to deprecated create function FileDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
     DESCRIPTOR = _descriptor.FileDescriptor(
 
-app/Lib/gftools/designers_pb2.py:35
+Lib/gftools/designers_pb2.py:35
   /workspace/app/Lib/gftools/designers_pb2.py:35: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
     _descriptor.FieldDescriptor(
 
-app/Lib/gftools/designers_pb2.py:53
+Lib/gftools/designers_pb2.py:53
   /workspace/app/Lib/gftools/designers_pb2.py:53: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
     _descriptor.FieldDescriptor(
 
-app/Lib/gftools/designers_pb2.py:71
+Lib/gftools/designers_pb2.py:71
   /workspace/app/Lib/gftools/designers_pb2.py:71: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
     _descriptor.FieldDescriptor(
 
-app/Lib/gftools/designers_pb2.py:28
+Lib/gftools/designers_pb2.py:28
   /workspace/app/Lib/gftools/designers_pb2.py:28: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
     _DESIGNERINFOPROTO = _descriptor.Descriptor(
 
-app/Lib/gftools/designers_pb2.py:110
+Lib/gftools/designers_pb2.py:110
   /workspace/app/Lib/gftools/designers_pb2.py:110: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
     _descriptor.FieldDescriptor(
 
-app/Lib/gftools/designers_pb2.py:103
+Lib/gftools/designers_pb2.py:103
   /workspace/app/Lib/gftools/designers_pb2.py:103: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
     _AVATARPROTO = _descriptor.Descriptor(
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
 =========================== short test summary info ============================
-ERROR app/tests/test_fontsetter.py - FileNotFoundError: [Errno 2] No such file or directory: 'data/test/Inconsolata[wdth,wght].ttf'
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-========================= 7 warnings, 1 error in 1.05s =========================
+FAILED tests/test_gfgithub.py::test_pr_files[6874-1] - Exception: GH_TOKEN environment variable not set
+FAILED tests/test_gfgithub.py::test_pr_files[6779-3] - Exception: GH_TOKEN environment variable not set
+FAILED tests/test_gfgithub.py::test_pr_files[2987-178] - Exception: GH_TOKEN environment variable not set
+FAILED tests/test_gfgithub.py::test_pr_files[6787-568] - Exception: GH_TOKEN environment variable not set
+ERROR tests/push/test_servers.py::test_servers_open_and_save - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+ERROR tests/push/test_servers.py::test_iter - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+ERROR tests/push/test_servers.py::test_compare_items[item0-res0] - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+ERROR tests/push/test_servers.py::test_update_server[update_family-Allan-res0] - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+ERROR tests/push/test_servers.py::test_update_server[update_family_designers-Allan-res1] - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+ERROR tests/push/test_servers.py::test_update_server[update_metadata-Allan-res2] - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+============= 4 failed, 201 passed, 7 warnings, 6 errors in 38.29s =============
