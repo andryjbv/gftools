@@ -1,8 +1,97 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.11.12, pytest-8.3.5, pluggy-1.6.0 -- /usr/local/bin/python3.11
 cachedir: .pytest_cache
-rootdir: /app
+rootdir: /workspace/app
 configfile: pyproject.toml
-collecting ... collected 0 items
+collecting ... collected 160 items / 2 errors
 
-============================ no tests ran in 0.00s =============================
+==================================== ERRORS ====================================
+__________________ ERROR collecting tests/test_fontsetter.py ___________________
+ImportError while importing test module '/workspace/app/tests/test_fontsetter.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.11/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+/usr/local/lib/python3.11/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+/usr/local/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1204: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1176: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1147: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:690: in _load_unlocked
+    ???
+/usr/local/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:185: in exec_module
+    exec(co, module.__dict__)
+app/tests/test_fontsetter.py:1: in <module>
+    from gftools.scripts.fontsetter import setter, getter
+app/Lib/gftools/scripts/__init__.py:27: in <module>
+    from gftools._version import version as __version__
+E   ModuleNotFoundError: No module named 'gftools._version'
+_____________________ ERROR collecting tests/test_usage.py _____________________
+ImportError while importing test module '/workspace/app/tests/test_usage.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.11/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+/usr/local/lib/python3.11/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+/usr/local/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1204: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1176: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1147: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:690: in _load_unlocked
+    ???
+/usr/local/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:185: in exec_module
+    exec(co, module.__dict__)
+app/tests/test_usage.py:23: in <module>
+    from gftools.scripts import _get_subcommands
+app/Lib/gftools/scripts/__init__.py:27: in <module>
+    from gftools._version import version as __version__
+E   ModuleNotFoundError: No module named 'gftools._version'
+=============================== warnings summary ===============================
+app/Lib/gftools/push/items.py:220
+  /workspace/app/Lib/gftools/push/items.py:220: DeprecationWarning: invalid escape sequence '\s'
+    return re.sub("\s+", " ", text).strip()
+
+app/Lib/gftools/designers_pb2.py:17
+  /workspace/app/Lib/gftools/designers_pb2.py:17: DeprecationWarning: Call to deprecated create function FileDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    DESCRIPTOR = _descriptor.FileDescriptor(
+
+app/Lib/gftools/designers_pb2.py:35
+  /workspace/app/Lib/gftools/designers_pb2.py:35: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+app/Lib/gftools/designers_pb2.py:53
+  /workspace/app/Lib/gftools/designers_pb2.py:53: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+app/Lib/gftools/designers_pb2.py:71
+  /workspace/app/Lib/gftools/designers_pb2.py:71: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+app/Lib/gftools/designers_pb2.py:28
+  /workspace/app/Lib/gftools/designers_pb2.py:28: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _DESIGNERINFOPROTO = _descriptor.Descriptor(
+
+app/Lib/gftools/designers_pb2.py:110
+  /workspace/app/Lib/gftools/designers_pb2.py:110: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+app/Lib/gftools/designers_pb2.py:103
+  /workspace/app/Lib/gftools/designers_pb2.py:103: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _AVATARPROTO = _descriptor.Descriptor(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR app/tests/test_fontsetter.py
+ERROR app/tests/test_usage.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+======================== 8 warnings, 2 errors in 1.96s =========================
