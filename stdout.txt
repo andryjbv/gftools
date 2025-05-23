@@ -3,7 +3,7 @@ platform linux -- Python 3.11.12, pytest-8.3.5, pluggy-1.6.0 -- /usr/local/bin/p
 cachedir: .pytest_cache
 rootdir: /workspace/app
 configfile: pyproject.toml
-collecting ... collected 211 items
+collecting ... collected 211 items / 4 deselected / 207 selected
 
 tests/push/test_items.py::test_item_from_fp_and_gf_data[Family-fp0-gf_data0-res0] PASSED [  0%]
 tests/push/test_items.py::test_item_from_fp_and_gf_data[FamilyMeta-fp1-gf_data1-res1] PASSED [  0%]
@@ -25,15 +25,15 @@ tests/push/test_trafficjam.py::test_push_items_operators[add-item10-item20-expec
 tests/push/test_trafficjam.py::test_push_items_operators[sub-item11-item21-expected1] PASSED [  8%]
 tests/push/test_trafficjam.py::test_push_items_add[items0-expected0] PASSED [  9%]
 tests/push/test_trafficjam.py::test_push_items_add[items1-expected1] PASSED [  9%]
-tests/push/test_trafficjam.py::test_push_items_add[items2-expected2] PASSED [  9%]
+tests/push/test_trafficjam.py::test_push_items_add[items2-expected2] PASSED [ 10%]
 tests/push/test_trafficjam.py::test_push_items_add[items3-expected3] PASSED [ 10%]
-tests/push/test_trafficjam.py::test_push_items_add[items4-expected4] PASSED [ 10%]
+tests/push/test_trafficjam.py::test_push_items_add[items4-expected4] PASSED [ 11%]
 tests/push/test_trafficjam.py::test_push_items_add[items5-expected5] PASSED [ 11%]
-tests/push/test_trafficjam.py::test_push_items_add[items6-expected6] PASSED [ 11%]
+tests/push/test_trafficjam.py::test_push_items_add[items6-expected6] PASSED [ 12%]
 tests/push/test_trafficjam.py::test_push_items_add[items7-expected7] PASSED [ 12%]
-tests/push/test_trafficjam.py::test_push_items_add[items8-expected8] PASSED [ 12%]
+tests/push/test_trafficjam.py::test_push_items_add[items8-expected8] PASSED [ 13%]
 tests/push/test_trafficjam.py::test_push_items_add[items9-expected9] PASSED [ 13%]
-tests/push/test_trafficjam.py::test_push_items_add[items10-expected10] PASSED [ 13%]
+tests/push/test_trafficjam.py::test_push_items_add[items10-expected10] PASSED [ 14%]
 tests/push/test_trafficjam.py::test_push_items_add[items11-expected11] PASSED [ 14%]
 tests/push/test_trafficjam.py::test_push_items_add[items12-expected12] PASSED [ 14%]
 tests/push/test_trafficjam.py::test_push_items_add[items13-expected13] PASSED [ 15%]
@@ -44,138 +44,134 @@ tests/push/test_trafficjam.py::test_push_items_to_server_file[items0-create_dirs
 tests/push/test_trafficjam.py::test_push_items_to_server_file[items1-create_dirs1-# New\n# Deleted: ofl/amatic # 46\n\n# Upgrade\nofl/mavenpro # 45\nofl/opensans # 47\n] PASSED [ 17%]
 tests/push/test_trafficjam.py::test_push_items_to_server_file[items2-create_dirs2-# Upgrade\nofl/mavenpro # 45\n] PASSED [ 18%]
 tests/push/test_trafficjam.py::test_push_items_missing_paths[path0-expected0] PASSED [ 18%]
-tests/push/test_trafficjam.py::test_push_items_missing_paths[path1-expected1] PASSED [ 18%]
+tests/push/test_trafficjam.py::test_push_items_missing_paths[path1-expected1] PASSED [ 19%]
 tests/push/test_trafficjam.py::test_push_items_to_json[item0-expected0] PASSED [ 19%]
-tests/push/test_trafficjam.py::test_push_items_to_json[item1-expected1] PASSED [ 19%]
+tests/push/test_trafficjam.py::test_push_items_to_json[item1-expected1] PASSED [ 20%]
 tests/push/test_trafficjam.py::test_push_items_to_json[item2-expected2] PASSED [ 20%]
-tests/test_builder.py::test_builder[/workspace/app/tests/../data/test/builder/basic_family_glyphs_0-font_paths0] PASSED [ 20%]
+tests/test_builder.py::test_builder[/workspace/app/tests/../data/test/builder/basic_family_glyphs_0-font_paths0] PASSED [ 21%]
 tests/test_builder.py::test_builder[/workspace/app/tests/../data/test/builder/check_compatibility_ufo_1-font_paths1] PASSED [ 21%]
-tests/test_builder.py::test_builder[/workspace/app/tests/../data/test/builder/recipeprovider_noto-font_paths2] PASSED [ 21%]
+tests/test_builder.py::test_builder[/workspace/app/tests/../data/test/builder/recipeprovider_noto-font_paths2] PASSED [ 22%]
 tests/test_builder.py::test_builder_glyphData[/workspace/app/tests/../data/test/builder/basic_family_glyphs_glyphData-font_paths0] PASSED [ 22%]
-tests/test_builder.py::test_builder_glyphData[/workspace/app/tests/../data/test/builder/recipeprovider_noto_glyphData-font_paths1] PASSED [ 22%]
+tests/test_builder.py::test_builder_glyphData[/workspace/app/tests/../data/test/builder/recipeprovider_noto_glyphData-font_paths1] PASSED [ 23%]
 tests/test_builder.py::test_bad_configs PASSED                           [ 23%]
-tests/test_dependencies.py::test_write_and_read_dependencies[data/test/Lora-Regular.ttf] PASSED [ 23%]
+tests/test_dependencies.py::test_write_and_read_dependencies[data/test/Lora-Regular.ttf] PASSED [ 24%]
 tests/test_fix.py::test_remove_tables PASSED                             [ 24%]
-tests/test_fix.py::test_add_dummy_dsig PASSED                            [ 24%]
+tests/test_fix.py::test_add_dummy_dsig PASSED                            [ 25%]
 tests/test_fix.py::test_fix_hinted_font PASSED                           [ 25%]
-tests/test_fix.py::test_fix_unhinted_font PASSED                         [ 25%]
+tests/test_fix.py::test_fix_unhinted_font PASSED                         [ 26%]
 tests/test_fix.py::test_fix_fs_type PASSED                               [ 26%]
-tests/test_fix.py::test_fix_weight_class[Hairline-1-64-0] PASSED         [ 26%]
+tests/test_fix.py::test_fix_weight_class[Hairline-1-64-0] PASSED         [ 27%]
 tests/test_fix.py::test_fix_weight_class[Thin-100-64-0] PASSED           [ 27%]
-tests/test_fix.py::test_fix_weight_class[ExtraLight-200-64-0] PASSED     [ 27%]
-tests/test_fix.py::test_fix_weight_class[Light-300-64-0] PASSED          [ 27%]
+tests/test_fix.py::test_fix_weight_class[ExtraLight-200-64-0] PASSED     [ 28%]
+tests/test_fix.py::test_fix_weight_class[Light-300-64-0] PASSED          [ 28%]
 tests/test_fix.py::test_fix_weight_class[Regular-400-64-0] PASSED        [ 28%]
-tests/test_fix.py::test_fix_weight_class[Medium-500-64-0] PASSED         [ 28%]
+tests/test_fix.py::test_fix_weight_class[Medium-500-64-0] PASSED         [ 29%]
 tests/test_fix.py::test_fix_weight_class[SemiBold-600-64-0] PASSED       [ 29%]
-tests/test_fix.py::test_fix_weight_class[Bold-700-32-1] PASSED           [ 29%]
+tests/test_fix.py::test_fix_weight_class[Bold-700-32-1] PASSED           [ 30%]
 tests/test_fix.py::test_fix_weight_class[ExtraBold-800-64-0] PASSED      [ 30%]
-tests/test_fix.py::test_fix_weight_class[Black-900-64-0] PASSED          [ 30%]
+tests/test_fix.py::test_fix_weight_class[Black-900-64-0] PASSED          [ 31%]
 tests/test_fix.py::test_fix_weight_class[ExtraBlack-1000-64-0] PASSED    [ 31%]
-tests/test_fix.py::test_fix_weight_class[Hairline Italic-1-1-2] PASSED   [ 31%]
+tests/test_fix.py::test_fix_weight_class[Hairline Italic-1-1-2] PASSED   [ 32%]
 tests/test_fix.py::test_fix_weight_class[Thin Italic-100-1-2] PASSED     [ 32%]
-tests/test_fix.py::test_fix_weight_class[ExtraLight Italic-200-1-2] PASSED [ 32%]
+tests/test_fix.py::test_fix_weight_class[ExtraLight Italic-200-1-2] PASSED [ 33%]
 tests/test_fix.py::test_fix_weight_class[Light Italic-300-1-2] PASSED    [ 33%]
-tests/test_fix.py::test_fix_weight_class[Italic-400-1-2] PASSED          [ 33%]
+tests/test_fix.py::test_fix_weight_class[Italic-400-1-2] PASSED          [ 34%]
 tests/test_fix.py::test_fix_weight_class[Medium Italic-500-1-2] PASSED   [ 34%]
-tests/test_fix.py::test_fix_weight_class[SemiBold Italic-600-1-2] PASSED [ 34%]
+tests/test_fix.py::test_fix_weight_class[SemiBold Italic-600-1-2] PASSED [ 35%]
 tests/test_fix.py::test_fix_weight_class[Bold Italic-700-33-3] PASSED    [ 35%]
-tests/test_fix.py::test_fix_weight_class[ExtraBold Italic-800-1-2] PASSED [ 35%]
+tests/test_fix.py::test_fix_weight_class[ExtraBold Italic-800-1-2] PASSED [ 36%]
 tests/test_fix.py::test_fix_weight_class[Black Italic-900-1-2] PASSED    [ 36%]
-tests/test_fix.py::test_fix_weight_class[ExtraBlack Italic-1000-1-2] PASSED [ 36%]
-tests/test_fix.py::test_fix_weight_class[SemiCondensed Bold Italic-700-33-3] PASSED [ 36%]
-tests/test_fix.py::test_fix_weight_class[12pt Italic-400-1-2] PASSED     [ 37%]
-tests/test_fix.py::test_unknown_weight_class PASSED                      [ 37%]
-tests/test_fix.py::test_fs_selection[Hairline-1-64-0] PASSED             [ 38%]
-tests/test_fix.py::test_fs_selection[Thin-100-64-0] PASSED               [ 38%]
-tests/test_fix.py::test_fs_selection[ExtraLight-200-64-0] PASSED         [ 39%]
-tests/test_fix.py::test_fs_selection[Light-300-64-0] PASSED              [ 39%]
-tests/test_fix.py::test_fs_selection[Regular-400-64-0] PASSED            [ 40%]
-tests/test_fix.py::test_fs_selection[Medium-500-64-0] PASSED             [ 40%]
-tests/test_fix.py::test_fs_selection[SemiBold-600-64-0] PASSED           [ 41%]
-tests/test_fix.py::test_fs_selection[Bold-700-32-1] PASSED               [ 41%]
+tests/test_fix.py::test_fix_weight_class[ExtraBlack Italic-1000-1-2] PASSED [ 37%]
+tests/test_fix.py::test_fix_weight_class[SemiCondensed Bold Italic-700-33-3] PASSED [ 37%]
+tests/test_fix.py::test_fix_weight_class[12pt Italic-400-1-2] PASSED     [ 38%]
+tests/test_fix.py::test_unknown_weight_class PASSED                      [ 38%]
+tests/test_fix.py::test_fs_selection[Hairline-1-64-0] PASSED             [ 39%]
+tests/test_fix.py::test_fs_selection[Thin-100-64-0] PASSED               [ 39%]
+tests/test_fix.py::test_fs_selection[ExtraLight-200-64-0] PASSED         [ 40%]
+tests/test_fix.py::test_fs_selection[Light-300-64-0] PASSED              [ 40%]
+tests/test_fix.py::test_fs_selection[Regular-400-64-0] PASSED            [ 41%]
+tests/test_fix.py::test_fs_selection[Medium-500-64-0] PASSED             [ 41%]
+tests/test_fix.py::test_fs_selection[SemiBold-600-64-0] PASSED           [ 42%]
+tests/test_fix.py::test_fs_selection[Bold-700-32-1] PASSED               [ 42%]
 tests/test_fix.py::test_fs_selection[ExtraBold-800-64-0] PASSED          [ 42%]
-tests/test_fix.py::test_fs_selection[Black-900-64-0] PASSED              [ 42%]
+tests/test_fix.py::test_fs_selection[Black-900-64-0] PASSED              [ 43%]
 tests/test_fix.py::test_fs_selection[ExtraBlack-1000-64-0] PASSED        [ 43%]
-tests/test_fix.py::test_fs_selection[Hairline Italic-1-1-2] PASSED       [ 43%]
+tests/test_fix.py::test_fs_selection[Hairline Italic-1-1-2] PASSED       [ 44%]
 tests/test_fix.py::test_fs_selection[Thin Italic-100-1-2] PASSED         [ 44%]
-tests/test_fix.py::test_fs_selection[ExtraLight Italic-200-1-2] PASSED   [ 44%]
+tests/test_fix.py::test_fs_selection[ExtraLight Italic-200-1-2] PASSED   [ 45%]
 tests/test_fix.py::test_fs_selection[Light Italic-300-1-2] PASSED        [ 45%]
-tests/test_fix.py::test_fs_selection[Italic-400-1-2] PASSED              [ 45%]
-tests/test_fix.py::test_fs_selection[Medium Italic-500-1-2] PASSED       [ 45%]
-tests/test_fix.py::test_fs_selection[SemiBold Italic-600-1-2] PASSED     [ 46%]
-tests/test_fix.py::test_fs_selection[Bold Italic-700-33-3] PASSED        [ 46%]
-tests/test_fix.py::test_fs_selection[ExtraBold Italic-800-1-2] PASSED    [ 47%]
-tests/test_fix.py::test_fs_selection[Black Italic-900-1-2] PASSED        [ 47%]
-tests/test_fix.py::test_fs_selection[ExtraBlack Italic-1000-1-2] PASSED  [ 48%]
-tests/test_fix.py::test_fs_selection[SemiCondensed Bold Italic-700-33-3] PASSED [ 48%]
-tests/test_fix.py::test_fs_selection[12pt Italic-400-1-2] PASSED         [ 49%]
-tests/test_fix.py::test_fix_mac_style[Hairline-1-64-0] PASSED            [ 49%]
-tests/test_fix.py::test_fix_mac_style[Thin-100-64-0] PASSED              [ 50%]
-tests/test_fix.py::test_fix_mac_style[ExtraLight-200-64-0] PASSED        [ 50%]
-tests/test_fix.py::test_fix_mac_style[Light-300-64-0] PASSED             [ 51%]
-tests/test_fix.py::test_fix_mac_style[Regular-400-64-0] PASSED           [ 51%]
-tests/test_fix.py::test_fix_mac_style[Medium-500-64-0] PASSED            [ 52%]
-tests/test_fix.py::test_fix_mac_style[SemiBold-600-64-0] PASSED          [ 52%]
-tests/test_fix.py::test_fix_mac_style[Bold-700-32-1] PASSED              [ 53%]
-tests/test_fix.py::test_fix_mac_style[ExtraBold-800-64-0] PASSED         [ 53%]
-tests/test_fix.py::test_fix_mac_style[Black-900-64-0] PASSED             [ 54%]
-tests/test_fix.py::test_fix_mac_style[ExtraBlack-1000-64-0] PASSED       [ 54%]
-tests/test_fix.py::test_fix_mac_style[Hairline Italic-1-1-2] PASSED      [ 54%]
-tests/test_fix.py::test_fix_mac_style[Thin Italic-100-1-2] PASSED        [ 55%]
-tests/test_fix.py::test_fix_mac_style[ExtraLight Italic-200-1-2] PASSED  [ 55%]
-tests/test_fix.py::test_fix_mac_style[Light Italic-300-1-2] PASSED       [ 56%]
-tests/test_fix.py::test_fix_mac_style[Italic-400-1-2] PASSED             [ 56%]
-tests/test_fix.py::test_fix_mac_style[Medium Italic-500-1-2] PASSED      [ 57%]
-tests/test_fix.py::test_fix_mac_style[SemiBold Italic-600-1-2] PASSED    [ 57%]
-tests/test_fix.py::test_fix_mac_style[Bold Italic-700-33-3] PASSED       [ 58%]
-tests/test_fix.py::test_fix_mac_style[ExtraBold Italic-800-1-2] PASSED   [ 58%]
-tests/test_fix.py::test_fix_mac_style[Black Italic-900-1-2] PASSED       [ 59%]
-tests/test_fix.py::test_fix_mac_style[ExtraBlack Italic-1000-1-2] PASSED [ 59%]
-tests/test_fix.py::test_fix_mac_style[SemiCondensed Bold Italic-700-33-3] PASSED [ 60%]
-tests/test_fix.py::test_fix_mac_style[12pt Italic-400-1-2] PASSED        [ 60%]
-tests/test_fix.py::test_fix_vertical_metrics_family_consistency PASSED   [ 61%]
-tests/test_fix.py::test_fix_vertical_metrics_win_values PASSED           [ 61%]
-tests/test_fix.py::test_fix_vertical_metrics_typo_and_hhea_match PASSED  [ 62%]
-tests/test_fix.py::test_fix_vertical_metrics_typo_metrics_enabled PASSED [ 62%]
-tests/test_fix.py::test_fix_colr_v0_font[data/test/CairoPlay[slnt,wght]-no-empty-glyphs.ttf] PASSED [ 63%]
-tests/test_fix.py::test_fix_colr_v0_font[data/test/CairoPlay[slnt,wght]-gid1-not-empty.ttf] PASSED [ 63%]
-tests/test_fix.py::test_fix_colr_v1_font PASSED                          [ 63%]
-tests/test_fix.py::test_ofl_license_strings PASSED                       [ 64%]
-tests/test_fontsetter.py::test_setter[obj0-path0-100-res0] PASSED        [ 64%]
-tests/test_fontsetter.py::test_setter[obj1-path1-100-res1] PASSED        [ 65%]
-tests/test_fontsetter.py::test_setter[obj2-path2-100-res2] PASSED        [ 65%]
-tests/test_fontsetter.py::test_setter[obj3-path3-100-res3] PASSED        [ 66%]
-tests/test_fontsetter.py::test_setter[obj4-path4-val4-res4] PASSED       [ 66%]
-tests/test_fontsetter.py::test_setter[obj5-path5-|= 0x2-res5] PASSED     [ 67%]
-tests/test_fontsetter.py::test_setter_on_fonts[obj0-path0-64] PASSED     [ 67%]
-tests/test_fontsetter.py::test_setter_on_fonts[obj1-path1-1000] PASSED   [ 68%]
-tests/test_fontsetter.py::test_setter_on_fonts[obj2-path2-val2] PASSED   [ 68%]
-tests/test_fontsetter.py::test_setter_on_fonts[obj3-path3-10] PASSED     [ 69%]
-tests/test_gfgithub.py::test_pr_files[6874-1] FAILED                     [ 69%]
-tests/test_gfgithub.py::test_pr_files[6779-3] FAILED                     [ 70%]
-tests/test_gfgithub.py::test_pr_files[2987-178] FAILED                   [ 70%]
-tests/test_gfgithub.py::test_pr_files[6787-568] FAILED                   [ 71%]
+tests/test_fix.py::test_fs_selection[Italic-400-1-2] PASSED              [ 46%]
+tests/test_fix.py::test_fs_selection[Medium Italic-500-1-2] PASSED       [ 46%]
+tests/test_fix.py::test_fs_selection[SemiBold Italic-600-1-2] PASSED     [ 47%]
+tests/test_fix.py::test_fs_selection[Bold Italic-700-33-3] PASSED        [ 47%]
+tests/test_fix.py::test_fs_selection[ExtraBold Italic-800-1-2] PASSED    [ 48%]
+tests/test_fix.py::test_fs_selection[Black Italic-900-1-2] PASSED        [ 48%]
+tests/test_fix.py::test_fs_selection[ExtraBlack Italic-1000-1-2] PASSED  [ 49%]
+tests/test_fix.py::test_fs_selection[SemiCondensed Bold Italic-700-33-3] PASSED [ 49%]
+tests/test_fix.py::test_fs_selection[12pt Italic-400-1-2] PASSED         [ 50%]
+tests/test_fix.py::test_fix_mac_style[Hairline-1-64-0] PASSED            [ 50%]
+tests/test_fix.py::test_fix_mac_style[Thin-100-64-0] PASSED              [ 51%]
+tests/test_fix.py::test_fix_mac_style[ExtraLight-200-64-0] PASSED        [ 51%]
+tests/test_fix.py::test_fix_mac_style[Light-300-64-0] PASSED             [ 52%]
+tests/test_fix.py::test_fix_mac_style[Regular-400-64-0] PASSED           [ 52%]
+tests/test_fix.py::test_fix_mac_style[Medium-500-64-0] PASSED            [ 53%]
+tests/test_fix.py::test_fix_mac_style[SemiBold-600-64-0] PASSED          [ 53%]
+tests/test_fix.py::test_fix_mac_style[Bold-700-32-1] PASSED              [ 54%]
+tests/test_fix.py::test_fix_mac_style[ExtraBold-800-64-0] PASSED         [ 54%]
+tests/test_fix.py::test_fix_mac_style[Black-900-64-0] PASSED             [ 55%]
+tests/test_fix.py::test_fix_mac_style[ExtraBlack-1000-64-0] PASSED       [ 55%]
+tests/test_fix.py::test_fix_mac_style[Hairline Italic-1-1-2] PASSED      [ 56%]
+tests/test_fix.py::test_fix_mac_style[Thin Italic-100-1-2] PASSED        [ 56%]
+tests/test_fix.py::test_fix_mac_style[ExtraLight Italic-200-1-2] PASSED  [ 57%]
+tests/test_fix.py::test_fix_mac_style[Light Italic-300-1-2] PASSED       [ 57%]
+tests/test_fix.py::test_fix_mac_style[Italic-400-1-2] PASSED             [ 57%]
+tests/test_fix.py::test_fix_mac_style[Medium Italic-500-1-2] PASSED      [ 58%]
+tests/test_fix.py::test_fix_mac_style[SemiBold Italic-600-1-2] PASSED    [ 58%]
+tests/test_fix.py::test_fix_mac_style[Bold Italic-700-33-3] PASSED       [ 59%]
+tests/test_fix.py::test_fix_mac_style[ExtraBold Italic-800-1-2] PASSED   [ 59%]
+tests/test_fix.py::test_fix_mac_style[Black Italic-900-1-2] PASSED       [ 60%]
+tests/test_fix.py::test_fix_mac_style[ExtraBlack Italic-1000-1-2] PASSED [ 60%]
+tests/test_fix.py::test_fix_mac_style[SemiCondensed Bold Italic-700-33-3] PASSED [ 61%]
+tests/test_fix.py::test_fix_mac_style[12pt Italic-400-1-2] PASSED        [ 61%]
+tests/test_fix.py::test_fix_vertical_metrics_family_consistency PASSED   [ 62%]
+tests/test_fix.py::test_fix_vertical_metrics_win_values PASSED           [ 62%]
+tests/test_fix.py::test_fix_vertical_metrics_typo_and_hhea_match PASSED  [ 63%]
+tests/test_fix.py::test_fix_vertical_metrics_typo_metrics_enabled PASSED [ 63%]
+tests/test_fix.py::test_fix_colr_v0_font[data/test/CairoPlay[slnt,wght]-no-empty-glyphs.ttf] PASSED [ 64%]
+tests/test_fix.py::test_fix_colr_v0_font[data/test/CairoPlay[slnt,wght]-gid1-not-empty.ttf] PASSED [ 64%]
+tests/test_fix.py::test_fix_colr_v1_font PASSED                          [ 65%]
+tests/test_fix.py::test_ofl_license_strings PASSED                       [ 65%]
+tests/test_fontsetter.py::test_setter[obj0-path0-100-res0] PASSED        [ 66%]
+tests/test_fontsetter.py::test_setter[obj1-path1-100-res1] PASSED        [ 66%]
+tests/test_fontsetter.py::test_setter[obj2-path2-100-res2] PASSED        [ 67%]
+tests/test_fontsetter.py::test_setter[obj3-path3-100-res3] PASSED        [ 67%]
+tests/test_fontsetter.py::test_setter[obj4-path4-val4-res4] PASSED       [ 68%]
+tests/test_fontsetter.py::test_setter[obj5-path5-|= 0x2-res5] PASSED     [ 68%]
+tests/test_fontsetter.py::test_setter_on_fonts[obj0-path0-64] PASSED     [ 69%]
+tests/test_fontsetter.py::test_setter_on_fonts[obj1-path1-1000] PASSED   [ 69%]
+tests/test_fontsetter.py::test_setter_on_fonts[obj2-path2-val2] PASSED   [ 70%]
+tests/test_fontsetter.py::test_setter_on_fonts[obj3-path3-10] PASSED     [ 70%]
 tests/test_instancer.py::test_gen_static_font PASSED                     [ 71%]
-tests/test_instancer.py::test_gen_static_font_custom_names PASSED        [ 72%]
-tests/test_instancer.py::test_gen_static_font_custom_names_without_declaring_wght PASSED [ 72%]
+tests/test_instancer.py::test_gen_static_font_custom_names PASSED        [ 71%]
+tests/test_instancer.py::test_gen_static_font_custom_names_without_declaring_wght PASSED [ 71%]
 tests/test_instancer.py::test_gen_static_font_custom_names_ribbi PASSED  [ 72%]
-tests/test_instancer.py::test_gen_static_font_custom_names_non_ribbi PASSED [ 73%]
+tests/test_instancer.py::test_gen_static_font_custom_names_non_ribbi PASSED [ 72%]
 tests/test_usage.py::TestGFToolsScripts::test_add_font PASSED            [ 73%]
-tests/test_usage.py::TestGFToolsScripts::test_build_ofl PASSED           [ 74%]
+tests/test_usage.py::TestGFToolsScripts::test_build_ofl PASSED           [ 73%]
 tests/test_usage.py::TestGFToolsScripts::test_check_bbox PASSED          [ 74%]
-tests/test_usage.py::TestGFToolsScripts::test_check_copyright_notices PASSED [ 75%]
+tests/test_usage.py::TestGFToolsScripts::test_check_copyright_notices PASSED [ 74%]
 tests/test_usage.py::TestGFToolsScripts::test_check_font_version PASSED  [ 75%]
-tests/test_usage.py::TestGFToolsScripts::test_check_name PASSED          [ 76%]
+tests/test_usage.py::TestGFToolsScripts::test_check_name PASSED          [ 75%]
 tests/test_usage.py::TestGFToolsScripts::test_check_vtt_compatibility PASSED [ 76%]
-tests/test_usage.py::TestGFToolsScripts::test_compare_font PASSED        [ 77%]
+tests/test_usage.py::TestGFToolsScripts::test_compare_font PASSED        [ 76%]
 tests/test_usage.py::TestGFToolsScripts::test_find_features PASSED       [ 77%]
-tests/test_usage.py::TestGFToolsScripts::test_fix_ascii_fontmetadata PASSED [ 78%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_ascii_fontmetadata PASSED [ 77%]
 tests/test_usage.py::TestGFToolsScripts::test_fix_cmap PASSED            [ 78%]
-tests/test_usage.py::TestGFToolsScripts::test_fix_family PASSED          [ 79%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_family PASSED          [ 78%]
 tests/test_usage.py::TestGFToolsScripts::test_fix_familymetadata PASSED  [ 79%]
-tests/test_usage.py::TestGFToolsScripts::test_fix_font PASSED            [ 80%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_font PASSED            [ 79%]
 tests/test_usage.py::TestGFToolsScripts::test_fix_fsselection PASSED     [ 80%]
-tests/test_usage.py::TestGFToolsScripts::test_fix_fstype PASSED          [ 81%]
+tests/test_usage.py::TestGFToolsScripts::test_fix_fstype PASSED          [ 80%]
 tests/test_usage.py::TestGFToolsScripts::test_fix_gasp PASSED            [ 81%]
 tests/test_usage.py::TestGFToolsScripts::test_fix_glyph_private_encoding PASSED [ 81%]
 tests/test_usage.py::TestGFToolsScripts::test_fix_glyphs PASSED          [ 82%]
@@ -186,15 +182,15 @@ tests/test_usage.py::TestGFToolsScripts::test_fix_nonhinting PASSED      [ 84%]
 tests/test_usage.py::TestGFToolsScripts::test_fix_ttfautohint PASSED     [ 84%]
 tests/test_usage.py::TestGFToolsScripts::test_fix_vendorid PASSED        [ 85%]
 tests/test_usage.py::TestGFToolsScripts::test_fix_vertical_metrics PASSED [ 85%]
-tests/test_usage.py::TestGFToolsScripts::test_font_diff PASSED           [ 86%]
+tests/test_usage.py::TestGFToolsScripts::test_font_diff PASSED           [ 85%]
 tests/test_usage.py::TestGFToolsScripts::test_font_weights_coverage PASSED [ 86%]
-tests/test_usage.py::TestGFToolsScripts::test_list_italicangle PASSED    [ 87%]
+tests/test_usage.py::TestGFToolsScripts::test_list_italicangle PASSED    [ 86%]
 tests/test_usage.py::TestGFToolsScripts::test_list_panose PASSED         [ 87%]
-tests/test_usage.py::TestGFToolsScripts::test_list_weightclass PASSED    [ 88%]
+tests/test_usage.py::TestGFToolsScripts::test_list_weightclass PASSED    [ 87%]
 tests/test_usage.py::TestGFToolsScripts::test_list_widthclass PASSED     [ 88%]
-tests/test_usage.py::TestGFToolsScripts::test_nametable_from_filename PASSED [ 89%]
+tests/test_usage.py::TestGFToolsScripts::test_nametable_from_filename PASSED [ 88%]
 tests/test_usage.py::TestGFToolsScripts::test_ots PASSED                 [ 89%]
-tests/test_usage.py::TestGFToolsScripts::test_rangify PASSED             [ 90%]
+tests/test_usage.py::TestGFToolsScripts::test_rangify PASSED             [ 89%]
 tests/test_usage.py::TestGFToolsScripts::test_ttf2cp PASSED              [ 90%]
 tests/test_usage.py::TestGFToolsScripts::test_unicode_names PASSED       [ 90%]
 tests/test_usage.py::TestGFToolsScripts::test_update_families PASSED     [ 91%]
@@ -590,119 +586,6 @@ self = <PreparedRequest [GET]>, url = 'None', params = OrderedDict()
 E           requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
 
 /usr/local/lib/python3.11/site-packages/requests/models.py:438: MissingSchema
-=================================== FAILURES ===================================
-____________________________ test_pr_files[6874-1] _____________________________
-
-pr_number = 6874, file_count = 1
-
-    @pytest.mark.parametrize(
-        "pr_number,file_count",
-        [
-            (6874, 1),
-            (6779, 3),
-            (2987, 178),
-            (6787, 568),
-        ],
-    )
-    def test_pr_files(pr_number, file_count):
->       client = GitHubClient("google", "fonts")
-
-tests/test_gfgithub.py:15: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <gftools.gfgithub.GitHubClient object at 0x7b87b4683990>
-repo_owner = 'google', repo_name = 'fonts'
-
-    def __init__(self, repo_owner, repo_name):
-        if not "GH_TOKEN" in os.environ:
->           raise Exception("GH_TOKEN environment variable not set")
-E           Exception: GH_TOKEN environment variable not set
-
-Lib/gftools/gfgithub.py:16: Exception
-____________________________ test_pr_files[6779-3] _____________________________
-
-pr_number = 6779, file_count = 3
-
-    @pytest.mark.parametrize(
-        "pr_number,file_count",
-        [
-            (6874, 1),
-            (6779, 3),
-            (2987, 178),
-            (6787, 568),
-        ],
-    )
-    def test_pr_files(pr_number, file_count):
->       client = GitHubClient("google", "fonts")
-
-tests/test_gfgithub.py:15: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <gftools.gfgithub.GitHubClient object at 0x7b87b46920d0>
-repo_owner = 'google', repo_name = 'fonts'
-
-    def __init__(self, repo_owner, repo_name):
-        if not "GH_TOKEN" in os.environ:
->           raise Exception("GH_TOKEN environment variable not set")
-E           Exception: GH_TOKEN environment variable not set
-
-Lib/gftools/gfgithub.py:16: Exception
-___________________________ test_pr_files[2987-178] ____________________________
-
-pr_number = 2987, file_count = 178
-
-    @pytest.mark.parametrize(
-        "pr_number,file_count",
-        [
-            (6874, 1),
-            (6779, 3),
-            (2987, 178),
-            (6787, 568),
-        ],
-    )
-    def test_pr_files(pr_number, file_count):
->       client = GitHubClient("google", "fonts")
-
-tests/test_gfgithub.py:15: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <gftools.gfgithub.GitHubClient object at 0x7b87b46e82d0>
-repo_owner = 'google', repo_name = 'fonts'
-
-    def __init__(self, repo_owner, repo_name):
-        if not "GH_TOKEN" in os.environ:
->           raise Exception("GH_TOKEN environment variable not set")
-E           Exception: GH_TOKEN environment variable not set
-
-Lib/gftools/gfgithub.py:16: Exception
-___________________________ test_pr_files[6787-568] ____________________________
-
-pr_number = 6787, file_count = 568
-
-    @pytest.mark.parametrize(
-        "pr_number,file_count",
-        [
-            (6874, 1),
-            (6779, 3),
-            (2987, 178),
-            (6787, 568),
-        ],
-    )
-    def test_pr_files(pr_number, file_count):
->       client = GitHubClient("google", "fonts")
-
-tests/test_gfgithub.py:15: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <gftools.gfgithub.GitHubClient object at 0x7b87b4683e90>
-repo_owner = 'google', repo_name = 'fonts'
-
-    def __init__(self, repo_owner, repo_name):
-        if not "GH_TOKEN" in os.environ:
->           raise Exception("GH_TOKEN environment variable not set")
-E           Exception: GH_TOKEN environment variable not set
-
-Lib/gftools/gfgithub.py:16: Exception
 =============================== warnings summary ===============================
 Lib/gftools/designers_pb2.py:17
   /workspace/app/Lib/gftools/designers_pb2.py:17: DeprecationWarning: Call to deprecated create function FileDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
@@ -734,14 +617,10 @@ Lib/gftools/designers_pb2.py:103
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
 =========================== short test summary info ============================
-FAILED tests/test_gfgithub.py::test_pr_files[6874-1] - Exception: GH_TOKEN environment variable not set
-FAILED tests/test_gfgithub.py::test_pr_files[6779-3] - Exception: GH_TOKEN environment variable not set
-FAILED tests/test_gfgithub.py::test_pr_files[2987-178] - Exception: GH_TOKEN environment variable not set
-FAILED tests/test_gfgithub.py::test_pr_files[6787-568] - Exception: GH_TOKEN environment variable not set
 ERROR tests/push/test_servers.py::test_servers_open_and_save - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
 ERROR tests/push/test_servers.py::test_iter - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
 ERROR tests/push/test_servers.py::test_compare_items[item0-res0] - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
 ERROR tests/push/test_servers.py::test_update_server[update_family-Allan-res0] - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
 ERROR tests/push/test_servers.py::test_update_server[update_family_designers-Allan-res1] - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
 ERROR tests/push/test_servers.py::test_update_server[update_metadata-Allan-res2] - requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
-============= 4 failed, 201 passed, 7 warnings, 6 errors in 38.29s =============
+=========== 201 passed, 4 deselected, 7 warnings, 6 errors in 37.95s ===========
