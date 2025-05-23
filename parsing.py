@@ -23,6 +23,7 @@ Output:
 import dataclasses
 import json
 import sys
+import re
 from enum import Enum
 from pathlib import Path
 from typing import List
@@ -64,7 +65,17 @@ def parse_test_output(stdout_content: str, stderr_content: str) -> List[TestResu
         - Use regular expressions or string parsing to extract test results
         - Create TestResult objects for each test found
     """
-    raise NotImplementedError('Implement the test output parsing logic')
+    results: List[TestResult] = []
+    combined = stdout_content + "\n" + stderr_content
+    pattern = re.compile(r"^(?P<name>[^\s]+)\s+(?P<status>PASSED|FAILED|SKIPPED|ERROR)", re.MULTILINE)
+
+    for match in pattern.finditer(combined):
+        name = match.group("name")
+        status_str = match.group("status")
+        status = TestStatus[status_str]
+        results.append(TestResult(name=name, status=status))
+
+    return results
 
 
 ### Implement the parsing logic above ###
