@@ -7,6 +7,11 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 export PYTHONPATH="$SCRIPT_DIR/app/Lib:$PYTHONPATH"
 
+# Ensure version file exists for scripts that import it
+if [ ! -f "$SCRIPT_DIR/app/Lib/gftools/_version.py" ]; then
+  echo "version = '0.0.0'" > "$SCRIPT_DIR/app/Lib/gftools/_version.py"
+fi
+
 # --- CONFIGURE THIS SECTION ---
 # Replace this with your command to run all tests
 run_all_tests() {
