@@ -1,0 +1,8 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.12, pytest-8.3.5, pluggy-1.6.0 -- /usr/local/bin/python3.11
+cachedir: .pytest_cache
+rootdir: /app
+configfile: pyproject.toml
+collecting ... collected 0 items
+
+============================ no tests ran in 0.00s =============================
