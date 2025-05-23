@@ -17,7 +17,9 @@ fi
 run_all_tests() {
   echo "Running all tests..."
   set +e
-  pytest -vv app/tests > /workspace/stdout.txt 2> /workspace/stderr.txt
+  pushd "$SCRIPT_DIR/app" >/dev/null
+  pytest -vv tests > "$SCRIPT_DIR/stdout.txt" 2> "$SCRIPT_DIR/stderr.txt"
+  popd >/dev/null
   set -e
   return 0
 }
@@ -27,7 +29,18 @@ run_selected_tests() {
   local test_files=("$@")
   echo "Running selected tests: ${test_files[@]}"
   set +e
-  pytest -vv "${test_files[@]}" > /workspace/stdout.txt 2> /workspace/stderr.txt
+  pushd "$SCRIPT_DIR/app" >/dev/null
+  # Strip leading 'app/' from paths if present
+  local adjusted_tests=()
+  for test in "${test_files[@]}"; do
+    if [[ "$test" == app/* ]]; then
+      adjusted_tests+=("${test#app/}")
+    else
+      adjusted_tests+=("$test")
+    fi
+  done
+  pytest -vv "${adjusted_tests[@]}" > "$SCRIPT_DIR/stdout.txt" 2> "$SCRIPT_DIR/stderr.txt"
+  popd >/dev/null
   set -e
   return 0
 }
