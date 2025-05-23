@@ -6,18 +6,14 @@ set -e
 # Replace this with your command to run all tests
 run_all_tests() {
   echo "Running all tests..."
-  # Example: pytest tests/
-  # TODO: Replace with your command to run all tests
-  # Your command here
+  pytest -v app/tests
 }
 
 # Replace this with your command to run specific test files
 run_selected_tests() {
   local test_files=("$@")
   echo "Running selected tests: ${test_files[@]}"
-  # Example: pytest "${test_files[@]}"
-  # TODO: Replace with your command to run specific test files
-  # <Your command here>
+  pytest -v "${test_files[@]}"
 }
 # --- END CONFIGURATION SECTION ---
 
