@@ -2,6 +2,11 @@
 ### COMMON SETUP; DO NOT MODIFY ###
 set -e
 
+# Ensure script runs from its directory so relative paths work
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+export PYTHONPATH="$SCRIPT_DIR/app/Lib:$PYTHONPATH"
+
 # --- CONFIGURE THIS SECTION ---
 # Replace this with your command to run all tests
 run_all_tests() {
