@@ -1,0 +1,377 @@
+<PROJECT_TREE>
+app/
+    renovate.json
+    .gitmodules
+    MANIFEST.in
+    pyproject.toml
+    README.md
+    font-metadata.csv
+    LICENSE
+    nametest.nam
+    tests/
+        test_instancer.py
+        test_builder.py
+        test_fontsetter.py
+        test_dependencies.py
+        test_usage.py
+        test_utils.py
+        test_fix.py
+        test_gfgithub.py
+        push/
+            test_servers.py
+            test_trafficjam.py
+            test_items.py
+    Lib/
+        gftools/
+            logging.py
+            gfgithub.py
+            constants.py
+            fix.py
+            fonts_public.proto
+            designers_pb2.py
+            template.upstream.yaml
+            ufomerge.py
+            knowledge.proto
+            qa.py
+            axes.proto
+            udhr_all.txt
+            axes_pb2.py
+            subsetmerger.py
+            knowledge_pb2.py
+            utils.py
+            instancer.py
+            stat.py
+            __init__.py
+            argparse.py
+            article.py
+            fonts_public_pb2.py
+            designers.proto
+            scripts/
+                remap_layout.py
+                set_primary_script.py
+                fix_cmap.py
+                manage_traffic_jam.py
+                tag_noto.py
+                ufo_fix_instances.py
+                push_status.py
+                fix_glyph_private_encoding.py
+                fix_gasp.py
+                transfer_vtt_hints.py
+                ots.py
+                rangify.py
+                font_weights_coverage.py
+                font_diff.py
+                metadata_vs_api.py
+                add_ds_subsets.py
+                add_axis.py
+                list_panose.py
+                fix_nameids.py
+                autohint.py
+                update_version.py
+                sanity_check.py
+                ttf2cp.py
+                check_sandbox_family.py
+                ufo_set_order.py
+                varfont_info.py
+                add_font.py
+                update_nameids.py
+                lang_support.py
+                qa.py
+                format_html.py
+                space_check.py
+                font_dependencies.py
+                fix_ttfautohint.py
+                fix_fstype.py
+                check_vtt_compile.py
+                compare_font.py
+                check_font_version.py
+                batch_packager.py
+                fix_ascii_fontmetadata.py
+                ufo_transfer_data.py
+                remap_font.py
+                check_category.py
+                gen_push_lists.py
+                ufo_setter.py
+                fix_hinting.py
+                unicode_names.py
+                fix_unwanted_tables.py
+                check_bbox.py
+                fix_vendorid.py
+                check_name.py
+                list_weightclass.py
+                ufo_merge.py
+                rename_glyphs.py
+                fix_nonhinting.py
+                list_italicangle.py
+                fix_glyphs.py
+                rename_font.py
+                push_stats.py
+                check_copyright_notices.py
+                check_vtt_compatibility.py
+                fix_article.py
+                drop_hints.py
+                update_families.py
+                list_widthclass.py
+                family_html_snippet.py
+                add_designer.py
+                gen_avar2.py
+                fix_fsselection.py
+                packager.py
+                build_ofl.py
+                fix_family.py
+                __init__.py
+                fix_isfixedpitch.py
+                fontsetter.py
+                nametable_from_filename.py
+                fix_familymetadata.py
+                find_features.py
+                fix_vertical_metrics.py
+                fix_weightclass.py
+                compare_meta.py
+                fix_font.py
+                fix_instances.py
+                what_subsets.py
+                check_vertical_extents.py
+                gen_stat.py
+            templates/
+                glyphs.html
+                _base.html
+                text.html
+                waterfall.html
+            push-templates/
+                index.html
+            util/
+                google_fonts.py
+                styles.py
+                __init__.py
+            builder/
+                build_vtt.py
+                autohint.py
+                schema.py
+                __init__.py
+                file.py
+                __main__.py
+                dependencies.py
+                fontc.py
+                recipeproviders/
+                    __init__.py
+                    noto.py
+                    googlefonts.py
+                jobrunner/
+                    __init__.py
+                    __main__.py
+                operations/
+                    copy.py
+                    instantiateUfo.py
+                    rename.py
+                    hbsubset.py
+                    subspace.py
+                    fix.py
+                    buildVTT.py
+                    autohint.py
+                    featureFreeze.py
+                    paintcompiler.py
+                    buildVariable.py
+                    compress.py
+                    addSubset.py
+                    remap.py
+                    buildOTF.py
+                    remapLayout.py
+                    buildStat.py
+                    glyphs2ds.py
+                    exec.py
+                    __init__.py
+                    buildTTF.py
+                    autohintOTF.py
+                    buildAvar2.py
+                    fontc/
+                        fontcBuildTTF.py
+                        fontcBuildOTF.py
+                        __init__.py
+                        fontcBuildVariable.py
+            actions/
+                checkgooglefonts.py
+                getlatestversion.py
+                checkversionbump.py
+                qa2issue.py
+                __init__.py
+            encodings/
+                README.md
+                GF Glyph Sets/
+                    README.md
+            push/
+                items.py
+                utils.py
+                trafficjam.py
+                servers.py
+                __init__.py
+            packager/
+                build.py
+                __init__.py
+    docs/
+        regen-docs.sh
+        gftools-builder/
+            graph.png
+            README.md
+        gftools-packager/
+            step3.png
+            step2.png
+            step1.png
+            README.md
+    bin/
+        test_args.py
+        fonts-subset-support.py
+        bash_completion
+        gftools
+    .vscode/
+        settings.json
+    data/
+        test/
+            Nabla[EDPT,EHLT].subset.ttf
+            Lora-Regular.ttf
+            Lora.glyphs
+            MavenPro[wght].ttf
+            CairoPlay[slnt,wght]-no-empty-glyphs.ttf
+            Inconsolata[wdth,wght].ttf
+            Lora-Regular.ttf-old
+            arabic_unique-glyphs.nam
+            builder_test.yaml
+            Raleway-Italic[wght].ttf
+            Raleway[wght].ttf
+            Lora-Roman-VF.ttf
+            lora_stat.yaml
+            Montserrat-Regular.ttf
+            CairoPlay[slnt,wght]-gid1-not-empty.ttf
+            mavenpro/
+                MavenPro-Regular.ttf
+                MavenPro-Black.ttf
+                MavenPro-Bold.ttf
+                MavenPro-Medium.ttf
+            Libre-Bodoni/
+                AUTHORS.txt
+                CONTRIBUTORS.txt
+                FONTLOG.txt
+                requirements.txt
+                README.md
+                OFL.txt
+                sources/
+                    config.yaml
+                    LibreBodoni.glyphs
+                    LibreBodoni-Italic.glyphs
+            cabin_split/
+                Cabin[wght].ttf
+                CabinCondensed-Italic[wght].ttf
+                Cabin-Italic[wght].ttf
+                CabinCondensed[wght].ttf
+            article/
+                ARTICLE.en_us.html
+                vid1.gif
+                img1.png
+            cabin_multi/
+                Cabin-Italic[wdth,wght].ttf
+                Cabin[wdth,wght].ttf
+            mock_googlefonts/
+                ofl/
+                    abel/
+                        FONTLOG.txt
+                        Abel-Regular.ttf
+                        METADATA.pb
+                        DESCRIPTION.en_us.html
+                        OFL.txt
+            servers/
+                fonts.json
+                family.json
+            gf_fonts/
+                joeprince/
+                    joe_prince.png
+                    info.pb
+                ofl/
+                    mavenpro/
+                        MavenPro[wght].ttf
+                        METADATA.pb
+                        DESCRIPTION.en_us.html
+                        OFL.txt
+            builder/
+                test_family.glyphs
+                recipeprovider_noto_glyphData/
+                    config.yaml
+                    TestFamily.glyphs
+                    GlyphData.xml
+                recipeprovider_noto/
+                    config.yaml
+                    TestFamily.glyphs
+                basic_family_glyphs_0/
+                    config.yaml
+                    TestFamily.glyphs
+                basic_family_glyphs_glyphData/
+                    config.yaml
+                    TestFamily.glyphs
+                    GlyphData.xml
+                check_compatibility_ufo_1/
+                    config.yaml
+                    TestFamily-Thin.ufo/
+                        fontinfo.plist
+                        layercontents.plist
+                        lib.plist
+                        metainfo.plist
+                        glyphs/
+                            contents.plist
+                            space.glif
+                            A_.glif
+                    TestFamily-Black.ufo/
+                        fontinfo.plist
+                        layercontents.plist
+                        lib.plist
+                        metainfo.plist
+                        glyphs/
+                            contents.plist
+                            space.glif
+                            A_.glif
+            cabin/
+                Cabin-Regular.ttf
+                Cabin-Regular.ttf-old
+</PROJECT_TREE>
+
+<LANGUAGE_DETECTED>
+Python
+Shell
+YAML
+TOML
+JSON
+Protocol Buffers
+Text
+</LANGUAGE_DETECTED>
+
+<DEPENDENCY_FILES>
+app/pyproject.toml
+app/MANIFEST.in
+app/data/test/Libre-Bodoni/requirements.txt
+app/renovate.json
+</DEPENDENCY_FILES>
+
+<BUILD_RUN_SCRIPTS>
+app/docs/regen-docs.sh
+app/bin/gftools
+app/bin/fonts-subset-support.py
+app/bin/test_args.py
+</BUILD_RUN_SCRIPTS>
+
+<README_INSTALL>
+    pip install gftools
+
+If you would like to use `gftools qa`:
+
+    brew install pkg-config # needed for interpolation checks
+    pip install 'gftools[qa]'
+</README_INSTALL>
+
+<ENV_VARS>
+GFTOOLS_SUBSETTER
+DEV_META_URL
+SANDBOX_URL
+GH_TOKEN
+</ENV_VARS>
+
+<PORTS_SERVICES>
+None
+</PORTS_SERVICES>
