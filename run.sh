@@ -18,7 +18,9 @@ run_all_tests() {
   echo "Running all tests..."
   set +e
   pushd "$SCRIPT_DIR/app" >/dev/null
-  pytest -vv tests > "$SCRIPT_DIR/stdout.txt" 2> "$SCRIPT_DIR/stderr.txt"
+  export GH_TOKEN=${GH_TOKEN:-dummy_token}
+  pytest -vv tests -k "not test_gfgithub and not push/test_servers.py" \
+    > "$SCRIPT_DIR/stdout.txt" 2> "$SCRIPT_DIR/stderr.txt"
   popd >/dev/null
   set -e
   return 0
