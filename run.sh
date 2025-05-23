@@ -19,7 +19,7 @@ run_all_tests() {
   set +e
   pushd "$SCRIPT_DIR/app" >/dev/null
   export GH_TOKEN=${GH_TOKEN:-dummy_token}
-  pytest -vv tests -k "not test_gfgithub and not push/test_servers.py" \
+  pytest -vv tests --ignore=tests/push/test_servers.py --ignore=tests/test_gfgithub.py \
     > "$SCRIPT_DIR/stdout.txt" 2> "$SCRIPT_DIR/stderr.txt"
   popd >/dev/null
   set -e
